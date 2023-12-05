@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>Samarth Polytechnic Belhe</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/logo_srei.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/logo_srei.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		  <div class="modal-content">
+			  <div class="modal-header tit-up">
+				  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				  <h4 class="modal-title">Login</h4>
+			  </div>
+			  <div class="modal-body customer-box">
+				  <!-- Nav tabs -->
+				  <ul class="nav nav-tabs">
+					<li><a class="active" href="#Login" data-toggle="tab">StudentLogin</a></li>
+					<li><a href="#Registration" data-toggle="tab">StudentRegistration</a></li>
+					<li><a class="#Login1" href="#Login1" data-toggle="tab">FacultyLogin</a></li>
+					<li><a href="#FacRegistration" data-toggle="tab">FacultyRegistration</a></li>
+				</ul>
+				  <!-- Tab panes -->
+				  <div class="tab-content">
+					  <div class="tab-pane active"  id="Login">
+						  <form role="form" action="login.php" method="get" class="form-horizontal">
+							  <div class="form-group">
+								  <div class="col-sm-12">
+									  <input class="form-control" name="email" id="exampleInputPassword1" placeholder="Email" type="email">
+								  </div>
+								  
+							  </div>
+							  <div class="form-group">
+								  <div class="col-sm-12">
+									  <input class="form-control" id="exampleInputPassword1" name="password" placeholder="password" type="password">
+								  </div>
+							  </div>
+							  <div class="row">
+								  <div class="col-sm-10">
+									  <button type="submit" class="btn btn-light btn-radius btn-brd grd1" onclick="" value="login">
+										  Submit
+									  </button>
+									
+									  <a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								  </div>
+							  </div>
+						  </form>
+					  </div>
+
+					  <div class="tab-pane"  id="Login1">
+						<form role="form" action="login1.php" method="get" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" name="email" id="exampleInputPassword1" placeholder="Email" type="email">
+								</div>
+								
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="exampleInputPassword1" name="password" placeholder="password" type="password">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1" onclick="" value="login">
+										Submit
+									</button>
+								  
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					  
+					  <div class="tab-pane" id="Registration">
+						<form role="form" method="post" action="stud.php" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" placeholder="Name" type="text" name="name" id="name">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email" name="email" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" name="password" id="password" placeholder="Password" type="password">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" name="contact" id="contact" placeholder="Mobile" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+								 <input class="form-control" name="bdate" id="bdate" placeholder="Date OF Birth" type="date">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-1">
+									Male<input class="form-control" placeholder="Name" name="gender" type="radio" value="male">	
+									female<input class="form-control" placeholder="Name" name="gender" type="radio" value="female">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" name="class" id="class" placeholder="Class" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+							  <div class="col-sm-12">
+								  <input class="form-control" name="enroll" id="enroll" placeholder="Enrollment No." type="text">
+							  </div>
+						  </div>
+					
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" name="address" id="address" placeholder="Address" type="textarea">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="hobbies" name="hobbies" placeholder="Hobbies" type="text">
+								</div>
+							</div>
+					
+							<div class="row">							
+								<div class="col-sm-10">
+									
+									<button type="submit" name="submit" value="submit" onclick="" class="btn btn-light btn-radius btn-brd grd1">
+										Save &amp; Continue
+									</button>
+									
+									<button type="reset"  class="btn btn-light btn-radius btn-brd grd1">
+										Cancel</button>
+								</div>
+							</div>
+						</form>
+					  </div>
+
+					  <div class="tab-pane" id="FacRegistration">	
+						<form role="form" method="post" action="faculty.php" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" placeholder="Name" name="name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email" name="email" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="password" name="password" placeholder="Password" type="password">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="mobile" name="contact" placeholder="Mobile" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+								 <input class="form-control" placeholder="Date OF Birth" name="bdate" type="date">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+								 <input class="form-control" placeholder="Address" name="address" type="text-area">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+								 <input class="form-control" placeholder="Expertise" name="expert" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-1">
+									Male<input class="form-control" placeholder="Name" name="gender" value="male" type="radio">	
+									female<input class="form-control" placeholder="Name" name="gender" value="female" type="radio">
+								</div>
+							</div>
+			
+							<div class="row">							
+								<div class="col-sm-10">
+									<button type="submit" value="submit" name="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Save &amp; Continue
+									</button>
+									<button type="reset" value="reset" name="reset" class="btn btn-light btn-radius btn-brd grd1">
+										Cancel</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				  </div>
+			  </div>
+		  </div>
+		</div>
+	</div>
+	 
+	 
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+
+    <!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo_srei.png" alt="" style="width:100px;height:80px"/>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+						<li class="nav-item active dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Course </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="Comp.html">Computer Engg </a>
+								<a class="dropdown-item" href="Mech.html">Mechinical Engg</a>
+								<a class="dropdown-item" href="Civil.html">Civil Engg</a>
+								<a class="dropdown-item" href="E&tc.html">E&tc Engg</a>
+								<a class="dropdown-item" href="Elec.html">Electrical Engg</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Facility </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="Library.html">Library Facility </a>
+								<a class="dropdown-item" href="Bus.html">Bus Facility</a>
+								<a class="dropdown-item" href="Hostel.html">Hostel Facility</a>
+								<a class="dropdown-item" href="Other.html">Other Facility</a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
+						<li class="nav-item"><a class="nav-link" href="NBA/Sar-converted-2.pdf">NBA</a></li>
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log" href="#" data-toggle="modal" data-target="#login"><span>Login</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+    <div class="all-title-box">
+		<div class="container text-center">
+			<h1>Software testing Lab <span class="m_1"></span></h1>
+		</div>
+	</div>
+	
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <p class="lead"></p>
+                </div>
+            </div><!-- end title -->
+</div>
+<!-- Lab -->
+<div class="row align-items-center">
+	<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+		<div class="post-media wow fadeIn">
+			<img src="images/department Lab Images/Software-Testing-Lab.jpeg" alt="" class="img-fluid img-rounded">
+		</div><!-- end media -->
+	</div><!-- end col -->
+	
+	<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+		<div class="message-box">
+			<h2>Software testing Lab </h2>
+			<p><h3>Softwares:</h3>Windows 7, Ubantu,
+
+                MS Office 10,
+                
+                Testing Tools,
+                
+                Paces tar UML,
+                
+                Turbo C++
+                
+                 </p> <br>
+                 <p><h3>Equipments:</h3>
+
+                    25 Computers
+                    
+                    1 GB Ram
+                    
+                    160 GB  HDD
+                    
+                    Dual Core Processor</p>
+
+                    <p><h3>Costing:</h3>
+                        &#8377 130000
+                    </p>
+		</div><!-- end messagebox -->
+	</div></div><!-- end col -->
+<!-- Div Lab -->
+<div style="background: #f2f2f2; margin:1rem;">
+	<div style="background:#f2f6f8; width:fit-content; margin-right: auto; margin-left:auto;">
+		
+	<h1 style="text-decoration: underline; text-align:center;padding:initial; ">Labs of computer department</h1>
+	<div class="Conatiner flex-flex" style=" width:fit-content; background:#d3e8e19f; display:block; margin-left:auto; margin-right:auto; padding:12px">
+		<li><a href="Software.html">Software testing Lab</a> <br></li>
+		<li><a href="language.html">Language Lab</a> <br></li>
+		<li><a href="DBMS.html">DBMS lab</a><br></li>
+		<li><a href="Networking.html">Networking lab</a><br></li>
+		<li><a href="Programming.html">Programming lab</a><br> </li> 
+		<li><a href="Hardware.html">Hardware lab </a><br></li>
+	</div>
+	</div>
+</div>
+<!-- Close of Div Lab -->
+<div class="parallax section dbcolor">
+<div class="container">
+	<div class="row logos">
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="images/Comp/bosch-logo.png" alt="" class="img-repsonsive"></a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="images/Comp/bridgestone-logo.png" alt="" class="img-repsonsive"></a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="images/Comp/general-electric-logo.png" alt="" class="img-repsonsive"></a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src=images/Comp/john-deer-logo.png" alt="" class="img-repsonsive"></a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="images/Comp/larsen-logo.png" alt="" class="img-repsonsive"></a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="images/Comp/mahindra-logo.png" alt="" class="img-repsonsive"></a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="images/Comp/minda-logo.png" alt="" class="img-repsonsive"></a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="images/Comp/motherson-logo.png" alt="" class="img-repsonsive"></a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="images/Comp/sigma-logo.png" alt="" class="img-repsonsive"></a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="images/Comp/tata-motors-logo.png" alt="" class="img-repsonsive"></a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="images/Comp/toyota-logo.png" alt="" class="img-repsonsive"></a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="" alt="" class="img-repsonsive"></a>
+		</div>
+	</div><!-- end row -->
+</div><!-- end container -->
+</div><!-- end section -->
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-xs-12">
+				<div class="widget clearfix">
+					<div class="widget-title">
+						<h3>About US</h3>
+					</div>
+					<p>Samarth Polytechnic is now IIC center.
+						Winter 2021 Exams timetable is available on www.msbte.org.in
+						Samarth Polytechnic is organizing Science Quiz for the students of Higher secondary schools.
+						For practical examination and theory examination respective HoD is the exam co-coordinator.
+						Samarth Polytechnic and AIC IIIT Kottayam signed MOU.
+						Samarth Polytechnic and RTTC, BSNL Pune signed MOU.</p>   
+					<div class="footer-right">
+						<ul class="footer-links-soi">
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-github"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+						</ul><!-- end links -->
+					</div>						
+				</div><!-- end clearfix -->
+			</div><!-- end col -->
+
+			<div class="col-lg-4 col-md-4 col-xs-12">
+				<div class="widget clearfix">
+					<div class="widget-title">
+						<h3>Information Link</h3>
+					</div>
+					<ul class="footer-links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">Course</a></li>
+						<li><a href="#">Placements</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul><!-- end links -->
+				</div><!-- end clearfix -->
+			</div><!-- end col -->
+			
+			<div class="col-lg-4 col-md-4 col-xs-12">
+				<div class="widget clearfix">
+					<div class="widget-title">
+						<h3>Contact Details</h3>
+					</div>
+
+					<ul class="footer-links">
+						<li><a href="mailto:#">0992principal@msbte.com</a></li>
+						<li><a href="#">MSBTE Code: 0992</a></li>
+						<li>DTE Code: 6451</li>
+						<li> +91 9766303701</li>
+					</ul><!-- end links -->
+				</div><!-- end clearfix -->
+			</div><!-- end col -->
+			
+		</div><!-- end row -->
+	</div><!-- end container -->
+</footer><!-- end footer -->
+
+<div class="copyrights">
+	<div class="container">
+		<div class="footer-distributed">
+			<div class="footer-center">                   
+				<p class="footer-company-name">All Rights Reserved. &copy; 2023 <a href="#">Samarth Polytechnic</a> Design By :Samruddhi Shirole Priyanka Pokharkar Atharva Shinde Niraj Suryavanshi <a href="https://html.design/">html design</a></p>
+			</div>
+		</div>
+	</div><!-- end container -->
+</div><!-- end copyrights -->
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>

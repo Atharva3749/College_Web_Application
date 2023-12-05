@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>Samarth Polytechnic Belhe</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/logo_srei.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/logo_srei.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="card.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		  <div class="modal-content">
+			  <div class="modal-header tit-up">
+				  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				  <h4 class="modal-title">Login</h4>
+			  </div>
+			  <div class="modal-body customer-box">
+				  <!-- Nav tabs -->
+				  <ul class="nav nav-tabs">
+					<li><a class="active" href="#Login" data-toggle="tab">StudentLogin</a></li>
+					<li><a href="#Registration" data-toggle="tab">StudentRegistration</a></li>
+					<li><a class="#Login1" href="#Login1" data-toggle="tab">FacultyLogin</a></li>
+					<li><a href="#FacRegistration" data-toggle="tab">FacultyRegistration</a></li>
+				</ul>
+				  <!-- Tab panes -->
+				  <div class="tab-content">
+					  <div class="tab-pane active"  id="Login">
+						  <form role="form" action="login.php" method="get" class="form-horizontal">
+							  <div class="form-group">
+								  <div class="col-sm-12">
+									  <input class="form-control" name="email" id="exampleInputPassword1" placeholder="Email" type="email">
+								  </div>
+								  
+							  </div>
+							  <div class="form-group">
+								  <div class="col-sm-12">
+									  <input class="form-control" id="exampleInputPassword1" name="password" placeholder="password" type="password">
+								  </div>
+							  </div>
+							  <div class="row">
+								  <div class="col-sm-10">
+									  <button type="submit" class="btn btn-light btn-radius btn-brd grd1" onclick="" value="login">
+										  Submit
+									  </button>
+									
+									  <a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								  </div>
+							  </div>
+						  </form>
+					  </div>
+
+					  <div class="tab-pane"  id="Login1">
+						<form role="form" action="login1.php" method="get" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" name="email" id="exampleInputPassword1" placeholder="Email" type="email">
+								</div>
+								
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="exampleInputPassword1" name="password" placeholder="password" type="password">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1" onclick="" value="login">
+										Submit
+									</button>
+								  
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					  
+					  <div class="tab-pane" id="Registration">
+						<form role="form" method="post" action="stud.php" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" placeholder="Name" type="text" name="name" id="name">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email" name="email" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" name="password" id="password" placeholder="Password" type="password">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" name="contact" id="contact" placeholder="Mobile" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+								 <input class="form-control" name="bdate" id="bdate" placeholder="Date OF Birth" type="date">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-1">
+									Male<input class="form-control" placeholder="Name" name="gender" type="radio" value="male">	
+									female<input class="form-control" placeholder="Name" name="gender" type="radio" value="female">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" name="class" id="class" placeholder="Class" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+							  <div class="col-sm-12">
+								  <input class="form-control" name="enroll" id="enroll" placeholder="Enrollment No." type="text">
+							  </div>
+						  </div>
+					
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" name="address" id="address" placeholder="Address" type="textarea">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="hobbies" name="hobbies" placeholder="Hobbies" type="text">
+								</div>
+							</div>
+					
+							<div class="row">							
+								<div class="col-sm-10">
+									
+									<button type="submit" name="submit" value="submit" onclick="" class="btn btn-light btn-radius btn-brd grd1">
+										Save &amp; Continue
+									</button>
+									
+									<button type="reset"  class="btn btn-light btn-radius btn-brd grd1">
+										Cancel</button>
+								</div>
+							</div>
+						</form>
+					  </div>
+
+					  <div class="tab-pane" id="FacRegistration">	
+						<form role="form" method="post" action="faculty.php" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" placeholder="Name" name="name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email" name="email" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="password" name="password" placeholder="Password" type="password">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="mobile" name="contact" placeholder="Mobile" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+								 <input class="form-control" placeholder="Date OF Birth" name="bdate" type="date">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+								 <input class="form-control" placeholder="Address" name="address" type="text-area">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+								 <input class="form-control" placeholder="Expertise" name="expert" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-1">
+									Male<input class="form-control" placeholder="Name" name="gender" value="male" type="radio">	
+									female<input class="form-control" placeholder="Name" name="gender" value="female" type="radio">
+								</div>
+							</div>
+			
+							<div class="row">							
+								<div class="col-sm-10">
+									<button type="submit" value="submit" name="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Save &amp; Continue
+									</button>
+									<button type="reset" value="reset" name="reset" class="btn btn-light btn-radius btn-brd grd1">
+										Cancel</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				  </div>
+			  </div>
+		  </div>
+		</div>
+	</div>
+  
+	 
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+
+    <!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo_srei.png" alt="" style="width:100px;height:80px"/>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+						<li class="nav-item active dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Course </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="Comp.html">Computer Engg </a>
+								<a class="dropdown-item" href="Mech.html">Mechinical Engg</a>
+								<a class="dropdown-item" href="Civil.html">Civil Engg</a>
+								<a class="dropdown-item" href="E&tc.html">E&tc Engg</a>
+								<a class="dropdown-item" href="Elec.html">Electrical Engg</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Facility </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="Library.html">Library Facility </a>
+								<a class="dropdown-item" href="Bus.html">Bus Facility</a>
+								<a class="dropdown-item" href="Hostel.html">Hostel Facility</a>
+								<a class="dropdown-item" href="Other.html">Other Facility</a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
+						<li class="nav-item"><a class="nav-link" href="NBA/Sar-converted-2.pdf">NBA</a></li>
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log" href="#" data-toggle="modal" data-target="#login"><span>Login</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div class="all-title-box">
+		<div class="container text-center">
+			<h1>Computer Engineering<span class="m_1"></span></h1>
+		</div>
+	</div>
+	
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <p class="lead"></p>
+                </div>
+            </div><!-- end title -->
+
+         
+<!-- hod Message -->
+
+<div class="row align-items-center">
+	<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+		<div class="message-box">
+			<h4>Samarth Polytechnic Belhe</h4>
+			<h2>Welcome to Computer Department of Engineering</h2>
+			<h3>Vision of Department</h3>
+			<p>To Enhance Quality Based Technical Education For Fulfilling Global Needs in the Field of Computer Engineering.</p>
+
+		</div><!-- end messagebox -->
+	</div><!-- end col -->
+	
+	<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+		<div class="post-media wow fadeIn">
+			<img src="images/Comp/Institute/Gate.jpeg" alt="" class="img-fluid img-rounded">
+		</div><!-- end media -->
+	</div><!-- end col -->
+</div>
+<div class="row align-items-center">
+	<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+		<div class="post-media wow fadeIn">
+			<img src="images/Comp/Institute/Buildings.jpeg" alt="" class="img-fluid img-rounded">
+		</div><!-- end media -->
+	</div><!-- end col -->
+	
+	<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+		<div class="message-box">
+			<h2>Mission of Department</h2>
+			<p><b>M1:</b>To Provide Quality Education in the Field of Computer Engineering For Easy Adaption to
+				Industry and Higher Learning. <br>
+				<b>M2:</b>To Enhance Technical Skills and Innovative Ideas Through Multidisciplinary Activities. <br>
+				<b>M3:</b>To Encourage and Mentor Students Social and Entrepreneurship Skills. <br>
+				<b>M4:</b>To Inculcate Technical Education For Serving Information Technology.</p>
+		   
+		</div><!-- end messagebox -->
+	</div><!-- end col -->
+	
+</div><!-- end row -->
+</div><!-- end container -->
+</div><!-- end section -->               
+<div id="overviews" class="section wb  border border-secondary px-2" style="background:#f2f2f2;">
+	<div class="container">
+		<div class="section-title row text-center">
+			<div class="col-md-8 offset-md-2">
+				<h3 style="text-decoration:underline;">HOD Message</h3>
+				<img src="images/Images/HOD.jpg" alt="Principle" style="width:350px;padding-bottom:300px;padding-right:50px;padding-top:50px;" align="left">
+			</div>
+		</div><!-- end title -->
+	<div class="container" >
+		<p class="lead" style="text-align:justify;" align="left ">Computer Science Engineering is the backbone for the implementation of digitization in India and in other countries. In today’s digital world, information becomes the heart of any process. The analysis of information, storage of information, retrieval of information, and representation of information are the core activities taught in 3 years diploma engineering course. After completing a computer engineering  diploma students are able to
+
+			Develop websites, web applications, stand-alone applications and  software,
+			Assemble computer hardware,
+			Find hardware failure of computer
+			Create and manage computer network
+			Handle computer server
+			Test web sites, web applications, stand-alone applications and  software,
+			Become an entrepreneur in the field of computer science
+			Speak fluently in English
+			
+			To get fulfilled in above all these aspects more stress is given on completing 100% academics as well as to bridge the gap between industry and educational institute number of   workshops are conducted. We believe that this approach to teaching-learning, coupled with practical experience gained during Industrial Training in reputed organizations, equips our students to handle the challenges posed by the software industry. I am confident that you will find our students worthy of your organization.
+			<b></i></b> 
+			</p>
+	</div>
+		
+		</div></div> </div></div>
+
+		<!-- Faculty -->
+		<center>
+		<div style="align-items:center; background:#f2f2f2">
+		<i class="fa fa-align-left" aria-hidden="true">
+		<div class="card">
+			<img style="width:min-content;"src="images/team-03.png" alt="Card Image">
+			<div class="card-content" >
+			  <h3>Ganesh Falke</h3>
+			  <p> Asst.Professor
+				BE (Computer)
+				5+ Year</p>
+			  <button>Show Profile</button>
+			</div>
+		  </div>
+		</i>
+		<i class="fa fa-align-center" aria-hidden="true">
+			<div class="card" style="display:flex;">
+				<img style="width:min-content;" src="images/team-02.png" alt="Card Image">
+				<div class="card-content" >
+				  <h3>Karad Vandana</h3>
+				  <p> Asst.Professor
+					BE, ME (Computer)
+					5+ Year</p>
+				  <button>Show Profile</button>
+				</div>
+			  </div>
+			</i>
+			<i class="fa fa-align-justify" aria-hidden="true">
+				<div class="card" style="display:flex;">
+					<img style="width:min-content;" src="images/team-01.png" alt="Card Image">
+					<div class="card-content" >
+					  <h3>Dhumal Kishori</h3>
+					  <p> Asst.Professor
+						BE (Computer)
+						2+ Year</p>
+					  <button id="">Show Profile</button>
+					</div>
+				  </div>
+				</i>
+			</div>
+		</center>
+		<!-- Faculty Close -->
+<div style="background: #f2f2f2; margin:1rem;">
+	<div style="background:#f2f6f8; width:fit-content; margin-right: auto; margin-left:auto;">
+		
+	<h1 style="text-decoration: underline; text-align:center;padding:initial; ">Labs of computer department</h1>
+	<div class="Conatiner flex-flex" style=" width:fit-content; background:#d3e8e19f; display:block; margin-left:auto; margin-right:auto; padding:12px">
+		<li><a href="Software.html">Software testing Lab</a> <br></li>
+		<li><a href="language.html">Language Lab</a> <br></li>
+		<li><a href="DBMS.html">DBMS Lab</a><br></li>
+		<li><a href="Networking.html">Networking lab</a><br></li>
+		<li><a href="Programming.html">Programming lab</a><br> </li> 
+		<li><a href="Hardware.html">Hardware lab </a><br></li>
+	</div>
+	</div>
+</div>
+<div class="parallax section dbcolor">
+<div class="container">
+	<div class="row logos">
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="images/Comp/bosch-logo.png" alt="" class="img-repsonsive"></a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="images/Comp/bridgestone-logo.png" alt="" class="img-repsonsive"></a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="images/Comp/general-electric-logo.png" alt="" class="img-repsonsive"></a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="images/Comp/john-deer-logo.png" alt="" class="img-repsonsive"></a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="images/Comp/larsen-logo.png" alt="" class="img-repsonsive"></a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="images/Comp/mahindra-logo.png" alt="" class="img-repsonsive"></a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="images/Comp/minda-logo.png" alt="" class="img-repsonsive"></a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="images/Comp/motherson-logo.png" alt="" class="img-repsonsive"></a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="images/Comp/sigma-logo.png" alt="" class="img-repsonsive"></a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="images/Comp/tata-motors-logo.png" alt="" class="img-repsonsive"></a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="images/Comp/toyota-logo.png" alt="" class="img-repsonsive"></a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+			<a href="#"><img src="" alt="" class="img-repsonsive"></a>
+		</div>
+	</div><!-- end row -->
+</div><!-- end container -->
+</div><!-- end section -->
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-xs-12">
+				<div class="widget clearfix">
+					<div class="widget-title">
+						<h3>About US</h3>
+					</div>
+					<p>Samarth Polytechnic is now IIC center.
+						Winter 2021 Exams timetable is available on www.msbte.org.in
+						Samarth Polytechnic is organizing Science Quiz for the students of Higher secondary schools.
+						For practical examination and theory examination respective HoD is the exam co-coordinator.
+						Samarth Polytechnic and AIC IIIT Kottayam signed MOU.
+						Samarth Polytechnic and RTTC, BSNL Pune signed MOU.</p>   
+					<div class="footer-right">
+						<ul class="footer-links-soi">
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-github"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+						</ul><!-- end links -->
+					</div>						
+				</div><!-- end clearfix -->
+			</div><!-- end col -->
+
+			<div class="col-lg-4 col-md-4 col-xs-12">
+				<div class="widget clearfix">
+					<div class="widget-title">
+						<h3>Information Link</h3>
+					</div>
+					<ul class="footer-links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">Course</a></li>
+						<li><a href="#">Placements</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul><!-- end links -->
+				</div><!-- end clearfix -->
+			</div><!-- end col -->
+			
+			<div class="col-lg-4 col-md-4 col-xs-12">
+				<div class="widget clearfix">
+					<div class="widget-title">
+						<h3>Contact Details</h3>
+					</div>
+
+					<ul class="footer-links">
+						<li><a href="mailto:#">0992principal@msbte.com</a></li>
+						<li><a href="#">MSBTE Code: 0992</a></li>
+						<li>DTE Code: 6451</li>
+						<li> +91 9766303701</li>
+					</ul><!-- end links -->
+				</div><!-- end clearfix -->
+			</div><!-- end col -->
+			
+		</div><!-- end row -->
+	</div><!-- end container -->
+</footer><!-- end footer -->
+
+<div class="copyrights">
+	<div class="container">
+		<div class="footer-distributed">
+			<div class="footer-center">                   
+				<p class="footer-company-name">All Rights Reserved. &copy; 2023 <a href="#">Samarth Polytechnic</a> Design By :Samruddhi Shirole Priyanka Pokharkar Atharva Shinde Niraj Suryavanshi <a href="https://html.design/">html design</a></p>
+			</div>
+		</div>
+	</div><!-- end container -->
+</div><!-- end copyrights -->
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
